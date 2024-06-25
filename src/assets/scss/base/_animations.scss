@@ -1,0 +1,21 @@
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(75%);
+  }
+}
+
+@keyframes loading-cycle {
+  0% {
+    animation-timing-function: cubic-bezier(0.3333, 0.3333, 0.6667, 0.6667);
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
