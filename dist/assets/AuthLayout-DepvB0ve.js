@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as r,i as s}from"./index-DH5bKGWT.js";const n={},a={class:"auth-grid"};function c(e,d){return t(),r("div",a,[s(e.$slots,"form",{},void 0,!0),s(e.$slots,"aside",{},void 0,!0)])}const i=o(n,[["render",c],["__scopeId","data-v-8f50d564"]]);export{i as A};
