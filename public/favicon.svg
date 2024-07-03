@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M40 0L40 0L40 40L0 40L0 0L40 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="logo-bagilink 1">
+    <path d="M40 0L40 0L40 40L0 40L0 0L40 0Z" id="logo-bagilink-1" fill="none" stroke="none" />
+    <g id="Group" transform="translate(2.8900287E-05 -0.0002312023)" clip-path="url(#clip_1)">
+      <g id="Group">
+        <g id="Group" />
+        <g id="Group" transform="translate(10.185529 3.8327382)">
+          <g id="Group">
+            <path d="M16.3286 8.08049C16.3286 5.93744 15.4685 3.88214 13.9374 2.36673C12.4063 0.85139 10.3297 0 8.16435 0L7.72728 0C3.45964 0 0 3.42414 0 7.64793L0 16.1611L8.16435 16.1611C10.3297 16.1611 12.4063 15.3098 13.9374 13.7943C15.4685 12.2789 16.3286 10.2236 16.3286 8.08057L16.3286 8.08049L16.3286 8.08049Z" id="Vector" fill="#FFBC86" fill-rule="evenodd" stroke="none" />
+          </g>
+          <g id="Group" transform="translate(4.9301005E-05 12.929019)">
+            <path d="M19.5944 9.69662C19.5944 7.12495 18.5622 4.65859 16.7248 2.84008C14.8876 1.02167 12.3956 0 9.79723 0L9.48235 0C6.96749 0 4.55564 0.988823 2.77733 2.74885C0.999019 4.50888 0 6.89595 0 9.38509L0 19.3933L9.79723 19.3933C12.3956 19.3933 14.8876 18.3718 16.7248 16.5532C18.5622 14.7347 19.5944 12.2684 19.5944 9.69671L19.5944 9.69662L19.5944 9.69662Z" id="Vector" fill="#FF8A2D" fill-rule="evenodd" stroke="none" />
+          </g>
+          <g id="Group" transform="translate(2.3221366 12.928718)">
+            <path d="M0 3.23239L5.84221 3.23239C7.99341 3.23239 10.0571 2.39225 11.5855 0.894875C10.3092 0.311066 8.90834 0 7.47507 0L7.16018 0C4.64535 0 2.23346 0.988827 0.455208 2.74892C0.297282 2.90536 0.14553 3.06637 0 3.23239L0 3.23239Z" id="Vector" fill="#FF9D4F" fill-rule="evenodd" stroke="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

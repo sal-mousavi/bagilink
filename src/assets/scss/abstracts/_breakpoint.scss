@@ -1,0 +1,26 @@
+$breakpoints: (
+  'small': (
+    max-width: 29em         //464px
+  ),
+  'medium': (
+    max-width: 50em         //800px
+  ),
+  'large': (
+    max-width: 90em         //1440px
+  )
+);
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @media screen and #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+           + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

@@ -1,0 +1,125 @@
+@use 'Scss/abstracts/breakpoint' as *;
+@use 'Scss/abstracts/colors' as *;
+
+// Headline, Article, Paragraph, Caption,
+// 64, 48, 36, 32, 28, 24, 20, 18, 16, 14
+
+$typography-map: (
+  headline-1: (
+    default: (
+      font-size: 6.4rem,
+      font-weight: 600,
+      line-height: 1.1,
+      color: $dark
+    ),
+    medium: (
+      font-size: 4.8rem
+    ),
+    small: (
+      font-size: 3.6rem
+    )
+  ),
+  headline-2: (
+    default: (
+      font-size: 4.8rem,
+      font-weight: 600,
+      line-height: 1.125,
+      color: $dark
+    ),
+    medium: (
+      font-size: 3.6rem
+    ),
+    small: (
+      font-size: 3.2rem
+    )
+  ),
+  headline-3: (
+    default: (
+      font-size: 3.6rem,
+      font-weight: 700,
+      line-height: 1.5,
+      color: $dark
+    ),
+    medium: (
+      font-size: 3.2rem
+    ),
+    small: (
+      font-size: 2.8rem
+    )
+  ),
+  headline-6: (
+    default: (
+      font-size: 2.4rem,
+      font-weight: 600,
+      line-height: 1.7,
+      color: $dark
+    ),
+    medium: (
+      font-size: 2rem
+    ),
+    small: (
+      font-size: 1.8rem
+    )
+  ),
+  paragraph-1: (
+    default: (
+      font-size: 2rem,
+      font-weight: 400,
+      line-height: 1.5,
+      color: $gray-1
+    ),
+    medium: (
+      font-size: 1.8rem
+    ),
+    small: (
+      font-size: 1.6rem
+    )
+  ),
+  paragraph-3: (
+    default: (
+      font-size: 1.6rem,
+      font-weight: 400,
+      line-height: 1.5,
+      color: $gray-1
+    ),
+    small: (
+      font-size: 1.4rem
+    )
+  ),
+  paragraph-4: (
+    default: (
+      font-size: 1.4rem,
+      font-weight: 400,
+      line-height: 1.5,
+      color: $gray-2
+    )
+  ),
+  paragraph-5: (
+    default: (
+      font-size: 1.2rem,
+      font-weight: 500,
+      line-height: 1.5,
+      color: $gray-2
+    )
+  )
+);
+
+@mixin typography($type) {
+  $type-raw: map-get($typography-map, $type);
+
+  @each $breakpoint, $css-styles in $type-raw {
+    @if $breakpoint == 'default' {
+      font-size: map-get($css-styles, 'font-size');
+      font-weight: map-get($css-styles, 'font-weight');
+      line-height: map-get($css-styles, 'line-height');
+      color: map-get($css-styles, 'color');
+    } @else {
+      @include respond-to($breakpoint) {
+        font-size: map-get($css-styles, 'font-size');
+        font-weight: map-get($css-styles, 'font-weight');
+        line-height: map-get($css-styles, 'line-height');
+        color: map-get($css-styles, 'color');
+      }
+    }
+  }
+}
